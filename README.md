@@ -12,7 +12,13 @@ on branch `B` that includes `A`, after `A` has been squash-merged into
 Installation
 ------------
 
-Just add this directory to your `PATH`, or copy or symlink `git-post-squash`
+If you have go 1.20+ installed then you can build and install the binary with:
+
+```shell
+go install github.com/roryq/git-post-squash@latest
+```
+
+Or if you want to use the Python3 script then add this directory to your `PATH`, or copy or symlink `git-post-squash`
 into a directory that is on your `PATH`.
 
 What is a squash merge?

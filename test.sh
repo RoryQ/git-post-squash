@@ -3,8 +3,10 @@
 set -e
 
 DIR=$(dirname ${BASH_SOURCE[0]})
-GPS=$(realpath $DIR/git-post-squash)
 TESTDIR=$DIR/_test
+
+#GPS=$(realpath $DIR/git-post-squash)
+GPS="go run ../main.go"
 
 rm -rf $TESTDIR
 git init $TESTDIR
